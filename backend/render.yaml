@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: flask-backend
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    region: oregon
+    plan: free
+    branch: main
